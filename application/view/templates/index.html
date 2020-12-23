@@ -1,1 +1,134 @@
-<h1>Proveta</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Prova Linx Impulse</title>
+        <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
+    </head>
+    <body>
+        <section class="main">
+            <div class="titulo-medio">
+                <h2 class="letra">Uma seleção de produtos para você</h2>
+            </div>
+            <div class="titulo-maior">
+                <h1 class="letra">Só para você</h1>
+            </div>
+            <div class="titulo-menor">
+                <h4 class="letra">Todos os produtos desta lista foram selecionados a partir de sua navegação. Aproveite!</h4>
+            </div>
+            <div class="card">
+                <div class="botao">
+                    <a href="#"><button class="btn">Conheça a Linx</button></a>
+                </div>
+                <div class="botao">
+                    <a href="#"><button class="btn">Ajude o algoritmo</button></a>
+                </div>
+                <div class="botao">
+                    <a href="#"><button class="btn">Seus produtos</button></a>
+                </div>
+                <div class="botao">
+                    <a href="#"><button class="btn">Compartilhe</button></a>
+                </div>
+            </div>
+        </section>
+        <section class="main5">
+            <div class="conteudo-main5">
+                <h2 class="titulo">Ajude o algoritmo a ser mais certeiro</h2>
+                <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus nec mi porta
+                    convallis sollicitudin eu urna. Mauris rhoncus erat sed interdum dignissim. Suspendisse semper pretium consectetur. 
+                    Praesent bibendum arcu risus, sit amet iaculis ex tempus quis. Cras et erat ut tellus vulputate tincidunt. Aenean lacinia
+                    euismod augue vel egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos 
+                    himenaeos. Vestibulum vel urna tortor.
+                    Vivamus et arcu non felis tristique eleifend. Morbi eu condimentum urna.
+                <p class="texto">Pellentesque ultricies tellus nec mi porta convallis sollicitudin eu urna. Mauris rhoncus erat sed interdum dignissim.  
+                    Curabitur eu magna eget turpis condimentum ultrices.
+                    Suspendisse quis lorem ultricies, pulvinar purus sed, egestas erat.
+                    Etiam ultricies a ante vehicula pharetra. Quisque ut neque mattis, consequat velit ut, ultrices orci. Nulla varius elementum erat vel pharetra.</p>
+            </div>
+            <div class="form-main5">
+                <div class="nome">
+                    <p class="letra">Seu nome:</p>
+                    <input type="text" name="name" class="form" id="name">
+                </div>
+                <div class="email-form">
+                    <p class="letra">E-mail:</p>
+                    <input type="email" class="email" name="email" id="email">
+                </div>
+                <div class="cpf-form">
+                    <p class="letra">CPF:</p>
+                    <input type="text" class="cpf" name="cpf" id="cpf">
+                </div>
+                <div class="genero">
+                    <ul class="bolinha">
+                        <li>
+                            <input type="radio" class="sexoMasc" name="gender" value="masculino">
+                            <label for="male">Masculino</label>
+                        </li>
+                        <li>
+                            <input type="radio" class="sexoFem" name="gender" value="feminino">
+                            <label for="female">Feminino</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="botao-form-main5">
+                    <button class="btn-main5">Enviar</button>
+                </div>
+            </div>
+        </section>
+        <section class="main2">
+            <div class="titulo-main2">
+                <h2 class="letra title-lines"> <span>Sua seleção especial</span></h2>
+            </div>
+            <div class="card2">
+                {% for produto in todos_produtos %}
+                <div class="conteudo">
+                    <img class="imagem-produto" src="https:{{produto.get_imagem()}}">
+                    <b><p class="nome-produto">{{produto.get_nome()}}</p></b>
+                    <p class="descricao-produto">{{produto.get_descricao()}}</p>
+                    <p class="preco-anterior">De: R${{produto.get_precoAntigo()}}</p>
+                    <b><p class="preco-atual">Por: R${{produto.get_precoAtual()}}</p></b>
+                    <p class="cartao">Ou {{produto.get_qntParcela()}} de R${{produto.get_valorParcela()}}</p>
+                    <button class="btn2">Comprar</button>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="botao-baixo">
+                <a href="#"><button class="btn">Ainda mais produtos aqui</button></a>
+            </div>
+        </section>
+        <section class="main3">
+            <div class="card4">
+                <div class="titulo-card4">
+                    <h2 class="letra title-lines"> <span>Compartilhe a novidade</span></h2>
+                </div>
+                <div class="subtitulo-card4">
+                    <p class="letra">Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+                </div>
+                <div class="form-card4">
+                    <div class="nome">
+                        <p class="letra">Nome do seu amigo:</p>
+                        <input type="text" name="name" class="form" id="name">
+                    </div>
+                    <div class="email-form">
+                        <p class="letra">E-mail:</p>
+                        <input type="email" class="email" name="email" id="email">
+                    </div>
+                </div>
+                <div class="botao-card4">
+                    <a href="#"><button class="btn-card4">Enviar agora</button></a>
+                </div>
+            </div>
+        </section>
+        <section class="main4">
+            <div class="titulo1">
+                <h5 class="letra">Testando suas habilidades em HTML, CSS e JS.</h5>
+            </div>
+            <div class="titulo">
+                <h5 class="letra">Linx Impulse</h1>
+            </div>
+            <div class="titulo">
+                <h5 class="letra">2019</h5>
+            </div>
+        </section>
+    </body>
+</html>

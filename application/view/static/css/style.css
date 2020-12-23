@@ -1,0 +1,445 @@
+.main{
+    width: 100%;
+    height: 450px;
+    background: #707070 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+    position: relative;
+    margin: 0 0 14rem 0;
+}
+
+.main:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background: #707070;
+    -webkit-transform: skewY(2deg);
+    transform: skewY(2deg);
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+    z-index: -9;
+}
+
+.main4{
+    width: 100%;
+    height: 250px;
+    background: #707070 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+    position: relative;
+}
+
+.main4:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background: #707070;
+    -webkit-transform: skewY(-2deg);
+    transform: skewY(-2deg);
+    -webkit-transform-origin: bottom left;
+    transform-origin: bottom left;
+    z-index: -9;
+}
+
+.main5 .form-main5 .genero .bolinha{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.main5{
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+}
+
+.main5 .form-main5 .nome .form{
+    width: 300px;
+    height: 25px;
+}
+
+.main5 .form-main5 .email-form .email{
+    width: 300px;
+    height: 25px;
+}
+
+.main5 .form-main5 .cpf-form .cpf{
+    width: 300px;
+    height: 25px;
+}
+
+.main5 .conteudo-main5 .titulo{
+    font-family: Arial;
+}
+
+.main5 .conteudo-main5 .texto{
+    font-family: Arial;
+}
+
+.main5 .form-main5 .nome .letra{
+    font-family: Arial;
+}
+
+.main5 .form-main5 .email-form .letra{
+    font-family: Arial;
+}
+
+.main5 .form-main5 .cpf-form .letra{
+    font-family: Arial;
+}
+
+.main5 .form-main5 .botao-form-main5{
+    padding-top: 20px;
+}
+
+.main3{
+    padding-top: 70px;
+    margin: 0 0 10rem 0;
+}
+
+.main3 .card4 .form-card4{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.main3 .card4 .botao-card4{
+    padding-top: 60px;
+}
+
+.main3 .card4{
+    padding-top: 85px;
+    text-align: center;
+}
+
+.main .card {
+    grid-area: botoes;
+    display: flex;
+    margin: 0;
+    padding-top: 20px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+}
+
+.main .card .botao .btn {
+    width: 160px;
+    height: 40px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0;
+    border: none;
+    color: #888888;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.main3 .card4 .botao-card4 .btn-card4{
+    width: 230px;
+    height: 40px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0;
+    border: none;
+    color: #888888;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.main2 .botao-baixo .btn{
+    width: 330px;
+    height: 50px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0;
+    border: none;
+    color: #888888;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.main2 .card2 .conteudo .btn2{
+    width: 290px;
+    height: 40px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0;
+    border: none;
+    color: #888888;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.main2 .card3 .conteudo .btn2{
+    width: 290px;
+    height: 40px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0;
+    border: none;
+    color: #888888;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.main2 .card2 .conteudo{
+    max-width: 300px;
+}
+
+.main2 .card3 .conteudo{
+    max-width: 300px;
+}
+
+.main5 .form-main5 .botao-form-main5 .btn-main5{
+    width: 307px;
+    height: 40px;
+    border-radius: 3px;
+    outline: none;
+    padding: 0;
+    border: none;
+    color: #888888;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.main5 .form-main5 .botao-form-main5 .btn-main5:hover{
+    color: black;
+}
+
+.main2 .card3 .conteudo .btn2:hover{
+    color: black;
+}
+
+.main2 .card2 .conteudo .btn2:hover{
+    color: black;
+}
+
+.main2 .botao-baixo .btn:hover{
+    color: black;
+}
+
+.main3 .card4 .botao-card4 .btn-card4:hover{
+    color: black;
+}
+
+.main .card .botao .btn:hover {
+    color: black;
+}
+
+.main5 .conteudo-main5{
+    max-width: 720px;
+}
+
+.main2 .titulo-main2{
+    padding-top: 100px;
+}
+
+.main2 .titulo-main2 .letra{
+    font-family: Arial;
+}
+
+.main3 .card4 .titulo-card4 .letra{
+    font-family: Arial;
+}
+
+.main3 .card4 .subtitulo-card4 .letra{
+    font-family: Arial;
+}
+
+.main3 .card4 .subtitulo-card4{
+    padding-top: 40px;
+}
+
+.main3 .card4 .form-card4{
+    padding-top: 30px;
+}
+
+.main3 .card4 .form-card4 .nome .letra{
+    font-family: Arial;
+    text-align: left;
+}
+
+.main3 .card4 .form-card4 .email-form .letra{
+    font-family: Arial;
+    text-align: left;
+}
+
+.main3 .card4 .form-card4 .nome .form{
+    width: 500px;
+    height: 30px;
+}
+
+.main3 .card4 .form-card4 .email-form .email{
+    width: 500px;
+    height: 30px;
+}
+
+.main2 .titulo-main2 {
+    text-align: center;
+}
+
+.main2 .card2 {
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+    padding-top: 40px;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+.main .card2 > div{
+    flex: 1 1 200px;
+}
+
+.main2 .card3 {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding-top: 30px;
+}
+
+.main2 .botao-baixo {
+    text-align: center;
+    padding-top: 70px;
+}
+
+.main2 .card2 .conteudo .imagem-produto{
+    height: 300px;
+    width: 300px;
+}
+
+.main2 .card3 .conteudo .imagem-produto{
+    height: 300px;
+    width: 300px;
+}
+
+.main .titulo-medio{
+    text-align: center;
+    padding-top: 55px;
+    color: #FFFFFF;
+}
+
+.main4 .titulo{
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.main4 .titulo1{
+    padding-top: 60px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.main4 .titulo1 .letra{
+    font-family: Arial;
+}
+
+.main4 .titulo .letra{
+    font-family: Arial;
+}
+
+.main .titulo-maior{
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.main .titulo-menor{
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.main .titulo-medio .letra{
+    font-family: Arial;
+}
+
+.main .titulo-maior .letra{
+    font-family: Arial;
+    font-size: 40px;
+}
+
+.main .titulo-menor .letra{
+    font-family: Arial;
+}
+
+.main2 .card2 .conteudo .nome-produto{
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.main2 .card2 .conteudo .descricao-produto{
+    font-family: Arial;
+}
+
+.main2 .card2 .conteudo .preco-anterior{
+    font-family: Arial;
+}
+
+.main2 .card2 .conteudo .preco-atual{
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.main2 .card2 .conteudo .cartao{
+    font-family: Arial;
+}
+
+.main2 .card3 .conteudo .nome-produto{
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.main2 .card3 .conteudo .descricao-produto{
+    font-family: Arial;
+}
+
+.main2 .card3 .conteudo .preco-anterior{
+    font-family: Arial;
+}
+
+.main2 .card3 .conteudo .preco-atual{
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.main2 .card3 .conteudo .cartao{
+    font-family: Arial;
+}
+
+.title-lines {
+    overflow: hidden;
+    text-align: center;
+    color: var(--secundary-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+  }
+  .title-lines > span{
+   position: relative;
+   display: inline-block;
+  }
+  .title-lines > span:before, .title-lines > span:after{
+   content: '';
+   position: absolute;
+   top: 50%;
+   border-bottom: .15rem solid;
+   width: 100vw;
+   margin: 0 20px;
+  }
+  .title-lines > span:before{
+   right: 100%;
+  }
+  .title-lines > span:after{
+   left: 100%;
+  }
